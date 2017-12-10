@@ -2,7 +2,7 @@
 title: "Instance"
 ---
 
-The `Instance` class is the base class of the object system. All other classes inherit, either directly or undirectly, from this class. The members that are common to all the OpenBlox objects belong to the `Instance` class. This is why many of the most important and most used members belong to this class.
+The Instance class is the base class of the object system. All other classes inherit, either directly or undirectly, from this class. The members that are common to all the OpenBlox objects belong to the Instance class. This is why many of the most important and most used members belong to this class.
 
 ## Properties
 
@@ -54,7 +54,7 @@ This method returns all children of the instance in an array.
 
 {{% method string GetFullName %}}
 
-This method returns the full name of the instance. This is usually in the form `game.Service.Thing` but can return weird things when one of the ancestors of the instance is parented to `nil`.
+This method returns the full name of the instance. This is usually in the form "game.Service.Thing" but can return weird things when one of the ancestors of the instance is parented to `nil`.
 
 {{% method int GetNetworkId %}}
 
