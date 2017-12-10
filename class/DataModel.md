@@ -23,7 +23,7 @@ This method returns the title of the game window.
 
 {{% method bool IsLoaded %}}
 
-This method returns `true` if the DataModel is loaded, otherwise `false`. Currently, this method is a stub.
+This method returns true if the DataModel is loaded, otherwise false. Currently, this method is a stub.
 
 {{% method string GetMessage %}}
 
@@ -43,7 +43,7 @@ This method shuts down the DataModel and causes the game to exit. If a status co
 
 {{% method double GetFPS %}}
 
-This method returns the last recorded frame rate in frames per second. On the server, this will always return `-1`.
+This method returns the last recorded frame rate in frames per second. On the server, this will always return -1.
 
 ## Events
 

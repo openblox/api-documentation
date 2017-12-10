@@ -20,7 +20,7 @@ The value of this property is the name of the instance. This property is used to
 
 {{% property Instance Parent %}}
 
-The value of this property is the hierarchical parent of the instance, in the scene graph. This property's default value is `nil`.
+The value of this property is the hierarchical parent of the instance, in the scene graph. This property's default value is void.
 
 {{% property int UseCount %}}
 
@@ -28,25 +28,25 @@ The value of this property is the hierarchical parent of the instance, in the sc
 
 {{% method void ClearAllChildren %}}
 
-This method sets the parent of all the descendants of the object to `nil`.
+This method sets the parent of all the descendants of the object to void.
 
 {{% method Instance Clone %}}
 
-This method creates a new instance of the class and sets all properties to the same value as this one. All children will be cloned as well, and their [Parent](#Parent) property will be set to this instance. The parent of the new instance will be `nil`.
+This method creates a new instance of the class and sets all properties to the same value as this one. All children will be cloned as well, and their [Parent](#Parent) property will be set to this instance. The parent of the new instance will be void.
 
-If the [Archivable](#Archivable) property is set to `false` or the class is abstract or uncreatable, this method will return `nil`. Otherwise, it will return the new instance.
+If the [Archivable](#Archivable) property is false or the class is abstract or uncreatable, this method will return void. Otherwise, it will return the new instance.
 
 {{% method void Destroy %}}
 
-This method is used to parent the object to `nil` and remove all references. All connections to events of this instance will be disconnected. The instance's [Parent](#Parent) property cannot be changed after this method is called.
+This method is used to parent the object to void and remove all references. All connections to events of this instance will be disconnected. The instance's [Parent](#Parent) property cannot be changed after this method is called.
 
 {{% method void Remove %}}
 
-This method sets the [Parent](#Parent) property to `nil` and recursively calls itself on children of the instance.
+This method sets the [Parent](#Parent) property to void and recursively calls itself on children of the instance.
 
 {{% method Instance FindFirstChild "string name" "bool recursive = false" %}}
 
-This method is used to find the first child of the instance with the given name. If {{%var%}}recursive{{%/var%}} is specified and `true`, this method will search all descendants of the instance.
+This method is used to find the first child of the instance with the given name. If {{%var%}}recursive{{%/var%}} is specified and true, this method will search all descendants of the instance.
 
 {{% method "Instance[]" GetChildren %}}
 
@@ -54,7 +54,7 @@ This method returns all children of the instance in an array.
 
 {{% method string GetFullName %}}
 
-This method returns the full name of the instance. This is usually in the form "game.Service.Thing" but can return weird things when one of the ancestors of the instance is parented to `nil`.
+This method returns the full name of the instance. This is usually in the form "game.Service.Thing" but can return weird things when one of the ancestors of the instance is parented to void.
 
 {{% method int GetNetworkId %}}
 
@@ -62,15 +62,15 @@ This method returns an integer used to represent the instance in network transac
 
 {{% method bool IsA "string className" %}}
 
-This method returns `true` if this class inherits from the class of the given name. If there is no such class, this method will always return `false`.
+This method returns true if this class inherits from the class of the given name. If there is no such class, this method will always return false.
 
 {{% method bool IsAncestorOf "Instance otherInstance" %}}
 
-This method returns `true` if {{%var%}}otherInstance{{%/var%}} is not `nil` and this instance is an ancestor of {{%var%}}otherInstance{{%/var%}}.
+This method returns true if {{%var%}}otherInstance{{%/var%}} is not void and this instance is an ancestor of {{%var%}}otherInstance{{%/var%}}.
 
 {{% method bool IsDescendantOf "Instance otherInstance" %}}
 
-This method returns `true` if {{%var%}}otherInstance{{%/var%}} is `nil` or this instance is a descendant of {{%var%}}otherInstance{{%/var%}}.
+This method returns true if {{%var%}}otherInstance{{%/var%}} is void or this instance is a descendant of {{%var%}}otherInstance{{%/var%}}.
 
 ## Events
 
