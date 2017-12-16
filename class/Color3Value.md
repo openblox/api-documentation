@@ -3,7 +3,7 @@ title: "Color3Value"
 superclass: "Instance"
 ---
 
-The Color3Value class provides away for developers to use Color3 values within the DataModel.
+The Color3Value class provides a way for developers to use Color3 values within the DataModel.
 
 ## Properties
 
