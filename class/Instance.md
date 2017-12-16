@@ -48,6 +48,10 @@ This method sets the [Parent](#Parent) property to void and recursively calls it
 
 This method is used to find the first child of the instance with the given name. If {{%var%}}recursive{{%/var%}} is specified and true, this method will search all descendants of the instance.
 
+{{% method Instance FindFirstChildOfClass "string className" "bool recursive = false" %}}
+
+This method is used to find the first child of the instance of a given class. If {{%var%}}recursive{{%/var%}} is specified and true, this method will search all descendants of the instance.
+
 {{% method "Instance[]" GetChildren %}}
 
 This method returns all children of the instance in an array.
