@@ -5,8 +5,8 @@ superclass: "Instance"
 
 The Camera class contains information about the viewpoint from which the scene will be rendered.
 
-## Properties
+## Methods
 
-{{% property Viewport Viewport %}}
+{{% method bool SaveScreenshot "string file" %}}
 
-The value of this property determines where this camera's view will be rendered on the screen.
+This method creates a screenshot of the current scene and saves it to the file specified.
