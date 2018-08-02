@@ -1,9 +1,9 @@
 ---
 title: "NumberValue"
-superclass: "Instance"
+superclass: "BaseValue"
 ---
 
-The NumberValue class provides away for developers to use double values within the DataModel.
+The NumberValue class provides a way for developers to use double values within the DataModel.
 
 ## Properties
 

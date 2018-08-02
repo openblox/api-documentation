@@ -1,6 +1,6 @@
 ---
 title: "BoolValue"
-superclass: "Instance"
+superclass: "BaseValue"
 ---
 
 The BoolValue class provides away for developers to use boolean values within the DataModel.

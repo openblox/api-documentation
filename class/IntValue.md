@@ -1,6 +1,6 @@
 ---
 title: "IntValue"
-superclass: "Instance"
+superclass: "BaseValue"
 ---
 
 The IntValue class provides away for developers to use integer values within the DataModel.
