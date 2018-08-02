@@ -24,6 +24,8 @@ The value of this property is the hierarchical parent of the instance, in the sc
 
 {{% property int UseCount %}}
 
+The value of this property is equal to the number of references to this Instance. When this hits 0, the instance is garbage collected. This property is read-only.
+
 ## Methods
 
 {{% method void ClearAllChildren %}}
